@@ -1,6 +1,6 @@
 package listas_slides;
 
-public class Cpf {
+public class Cpf implements Comparable<Cpf> {
 	private long numero;
 	private int digito;
 		
@@ -30,5 +30,14 @@ public class Cpf {
 	}
 	public void setNumero(long numero) {
 		this.numero = numero;
+	}
+	
+	@Override
+	public int compareTo(Cpf cpf) {
+		if(this.numero == cpf.getNumero()) return 0;
+		if(this.numero > cpf.getNumero()) return 1;
+		if(this.numero < cpf.getNumero()) return -1;
+		
+		return 0;
 	}
 }

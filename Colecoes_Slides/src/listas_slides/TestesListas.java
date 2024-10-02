@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+import pessoas.Pessoa;
+
 public class TestesListas {
     public static void main(String[] args) {
         //Como declarar um ArrayList para objetos do tipo Cpf?
